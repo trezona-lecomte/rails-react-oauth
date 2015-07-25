@@ -8,8 +8,8 @@
     "url": "https://github.com/trezona-lecomte/rails-react-oauth.git"
   },
   "scripts": {
-    "devserve": "webpack-dev-server -d --config webpack.config.js --content-base public/ --progress --colors",
-    "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors"
+    "devserve": "webpack-dev-server -d --config webpack.dev.config.js --content-base public/ --progress --colors",
+    "devbuild": "webpack -d --config webpack.dev.config.js --profile --progress --colors"
   },
   "author": "Kieran Trezona-le Comte",
   "license": "ISC",
