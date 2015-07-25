@@ -1,0 +1,6 @@
+:api = http://127.0.0.1:3000
+
+# GET blabs#index
+
+GET :api/blabs
+Content-Type : application/json
