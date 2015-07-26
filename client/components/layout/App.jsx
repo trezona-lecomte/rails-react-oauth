@@ -1,8 +1,8 @@
 var React = require('react');
 var Reqwest = require('reqwest');
-var BlabsView = require('../blabs/View.jsx');
 var Menu = require('./Menu.jsx');
 var Router = require('react-router');
+var BlabsView = require('../blabs/View.jsx');
 var RouteHandler = Router.RouteHandler;
 
 module.exports = React.createClass({
@@ -28,14 +28,14 @@ module.exports = React.createClass({
             }
         });
     },
-    render: function() {
+    render: function () {
         var menu = this.state.showMenu ? 'show-menu' : 'hide-menu';
 
         return (
             <div id="app" className={menu}>
               <Menu sendMenuClick={this.handleMenuClick} />
               <div id="content">
-                <BlabsView origin={this.props.origin} readFromAPI={this.readFromAPI} />
+                <RouteHandler origin={this.props.origin} readFromAPI={this.readFromAPI} />
               </div>
             </div>
         );
