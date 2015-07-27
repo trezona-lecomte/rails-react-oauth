@@ -6,6 +6,10 @@ class ApplicationController < ActionController::API
     render nothing: true
   end
 
+  def index
+    render file: 'public/index.html'
+  end
+
   def current_user
     render json: @current_user, only: [:handle]
   end
